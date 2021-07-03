@@ -601,151 +601,151 @@ p.look {margin: 0 3%;}
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width:800px){
 
-/*全体の設定
----------------------------------------------------------------------------*/
-body {
-	font-size: 2vw;	/*文字サイズ*/
-}
+	/*全体の設定
+	---------------------------------------------------------------------------*/
+	body {
+		font-size: 2vw;	/*文字サイズ*/
+	}
 
-/*ヘッダー
----------------------------------------------------------------------------*/
-/*ヘッダーブロック*/
-header {
-	border-bottom: 1px solid #ccc;
-}
-/*ヘッダーブロック（トップページへの追加設定）*/
-.home header {
-	border: none;
-}
+	/*ヘッダー
+	---------------------------------------------------------------------------*/
+	/*ヘッダーブロック*/
+	header {
+		border-bottom: 1px solid #ccc;
+	}
+	/*ヘッダーブロック（トップページへの追加設定）*/
+	.home header {
+		border: none;
+	}
 
-/*メインメニュー
----------------------------------------------------------------------------*/
-/*スマホ用メニューブロック全体*/
-#menubar-s {
-	overflow: auto;height: 100%;
-	position: fixed;z-index: 100;
-	top: 0px;
-	width: 100%;
-	background: rgba(0,0,0,0.8);	/*背景色*/
-	border-top: 1px solid #fff;		/*上の線の幅、線種、色*/
-	animation-name: frame1;		/*冒頭のkeyframesの名前*/
-	animation-duration: 0.5s;	/*アニメーションの実行時間。0.5秒。*/
-	animation-fill-mode: both;	/*待機中は最初のキーフレームを、完了後は最後のキーフレームを維持*/
-	font-size: 16px;			/*文字サイズ*/
-}
-#menubar-s li span {
-	margin-left: 20px;
-	font-size: 80%;
-}
-/*メニュー１個あたりの設定と、子メニューの見出し。*/
-#menubar-s ul li a,#menubar_hdr2 {
-	display: block;text-decoration: none;
-	padding: 30px 20px 30px 60px;
-	border-bottom: 1px solid #fff;	/*下の線の幅、線種、色*/
-	color: #fff;		/*文字色*/
-}
-/*PC用メニューを非表示にする*/
-#menubar {display: none;}
+	/*メインメニュー
+	---------------------------------------------------------------------------*/
+	/*スマホ用メニューブロック全体*/
+	#menubar-s {
+		overflow: auto;height: 100%;
+		position: fixed;z-index: 100;
+		top: 0px;
+		width: 100%;
+		background: rgba(0,0,0,0.8);	/*背景色*/
+		border-top: 1px solid #fff;		/*上の線の幅、線種、色*/
+		animation-name: frame1;		/*冒頭のkeyframesの名前*/
+		animation-duration: 0.5s;	/*アニメーションの実行時間。0.5秒。*/
+		animation-fill-mode: both;	/*待機中は最初のキーフレームを、完了後は最後のキーフレームを維持*/
+		font-size: 16px;			/*文字サイズ*/
+	}
+	#menubar-s li span {
+		margin-left: 20px;
+		font-size: 80%;
+	}
+	/*メニュー１個あたりの設定と、子メニューの見出し。*/
+	#menubar-s ul li a,#menubar_hdr2 {
+		display: block;text-decoration: none;
+		padding: 30px 20px 30px 60px;
+		border-bottom: 1px solid #fff;	/*下の線の幅、線種、色*/
+		color: #fff;		/*文字色*/
+	}
+	/*PC用メニューを非表示にする*/
+	#menubar {display: none;}
 
-/*子メニュー
----------------------------------------------------------------------------*/
-/*子メニューの見出しの追加。基本は上のブロックで設定しています。*/
-#menubar_hdr2 {
-	padding-left: 60px;	/*上にある「メニュー１個あたりの設定と、子メニューの見出し」の最後の数字（４つ目）に合わせる。*/
-}
-/*子メニューメニューブロック全体*/
-#menubar-s2 {
-	display: block;
-	margin-top: 10px;
-	border-radius: 5px;
-	background: rgba(0,0,0,0.3);
-	border: 1px solid #fff;
-}
-/*「＞」アイコン設定*/
-#menubar_hdr2.close {
-	background: url(../images/arrow2.png) no-repeat 20px 35px / 18px;
-}
-/*「＾」アイコン設定*/
-#menubar_hdr2.open {
-	background: url(../images/arrow3.png) no-repeat 20px 35px / auto 18px;
-}
-/*子メニュー１個あたりの設定*/
-#menubar-s2 li a {
-	border-bottom: 1px solid #fff !important;
-	padding: 10px 20px !important;
-}
-#menubar-s2 li:last-child a {
-	border-bottom: none !important;
-}
+	/*子メニュー
+	---------------------------------------------------------------------------*/
+	/*子メニューの見出しの追加。基本は上のブロックで設定しています。*/
+	#menubar_hdr2 {
+		padding-left: 60px;	/*上にある「メニュー１個あたりの設定と、子メニューの見出し」の最後の数字（４つ目）に合わせる。*/
+	}
+	/*子メニューメニューブロック全体*/
+	#menubar-s2 {
+		display: block;
+		margin-top: 10px;
+		border-radius: 5px;
+		background: rgba(0,0,0,0.3);
+		border: 1px solid #fff;
+	}
+	/*「＞」アイコン設定*/
+	#menubar_hdr2.close {
+		background: url(../images/arrow2.png) no-repeat 20px 35px / 18px;
+	}
+	/*「＾」アイコン設定*/
+	#menubar_hdr2.open {
+		background: url(../images/arrow3.png) no-repeat 20px 35px / auto 18px;
+	}
+	/*子メニュー１個あたりの設定*/
+	#menubar-s2 li a {
+		border-bottom: 1px solid #fff !important;
+		padding: 10px 20px !important;
+	}
+	#menubar-s2 li:last-child a {
+		border-bottom: none !important;
+	}
 
-/*３本バーアイコン設定
----------------------------------------------------------------------------*/
-/*３本バーブロック*/
-#menubar_hdr {
-	display: block;
-	position: fixed;z-index: 100;
-	top: 20px;		/*上からの配置場所*/
-	right: 2%;	/*右からの配置場所*/
-}
-/*アイコン共通設定*/
-#menubar_hdr.close,
-#menubar_hdr.open {
-	width: 50px;	/*幅*/
-	height: 50px;	/*高さ*/
-	border: 1px solid #fff;
-}
-/*三本バーアイコン*/
-#menubar_hdr.close {
-	background: #000 url(../images/icon_menu.png) no-repeat center top/50px;	/*背景色、背景画像の読み込み、画像の上半分（３本マーク）を表示。幅は50px。*/
-}
-/*閉じるアイコン*/
-#menubar_hdr.open {
-	background: #000 url(../images/icon_menu.png) no-repeat center bottom/50px;	/*背景色、背景画像の読み込み、画像の下半分（×マーク）を表示。幅は50px。*/
-}
+	/*３本バーアイコン設定
+	---------------------------------------------------------------------------*/
+	/*３本バーブロック*/
+	#menubar_hdr {
+		display: block;
+		position: fixed;z-index: 100;
+		top: 20px;		/*上からの配置場所*/
+		right: 2%;	/*右からの配置場所*/
+	}
+	/*アイコン共通設定*/
+	#menubar_hdr.close,
+	#menubar_hdr.open {
+		width: 50px;	/*幅*/
+		height: 50px;	/*高さ*/
+		border: 1px solid #fff;
+	}
+	/*三本バーアイコン*/
+	#menubar_hdr.close {
+		background: #000 url(../images/icon_menu.png) no-repeat center top/50px;	/*背景色、背景画像の読み込み、画像の上半分（３本マーク）を表示。幅は50px。*/
+	}
+	/*閉じるアイコン*/
+	#menubar_hdr.open {
+		background: #000 url(../images/icon_menu.png) no-repeat center bottom/50px;	/*背景色、背景画像の読み込み、画像の下半分（×マーク）を表示。幅は50px。*/
+	}
 
-.icon{
-	width:50px;
-	height:50px;
-}
+	.icon{
+		width:50px;
+		height:50px;
+	}
 
-/*fixmenu設定（メニューが画面上部に到達した際のスタイル）
----------------------------------------------------------------------------*/
-/*fixmenuから折りたたみメニューになるのでリセット。*/
-body.is-fixed-menu #contents {
-	margin-top: 0px;
-}
-body.is-fixed #contents {
-	margin-top: 0px;
-}
+	/*fixmenu設定（メニューが画面上部に到達した際のスタイル）
+	---------------------------------------------------------------------------*/
+	/*fixmenuから折りたたみメニューになるのでリセット。*/
+	body.is-fixed-menu #contents {
+		margin-top: 0px;
+	}
+	body.is-fixed #contents {
+		margin-top: 0px;
+	}
 
-/*コンテンツ
----------------------------------------------------------------------------*/
-#contents {
-	padding: 50px 0;	/*上下、左右へのコンテンツ内の余白*/
-}
-/*h2タグ*/
-#contents h2 {
-	margin-bottom: 50px;
-}
+	/*コンテンツ
+	---------------------------------------------------------------------------*/
+	#contents {
+		padding: 50px 0;	/*上下、左右へのコンテンツ内の余白*/
+	}
+	/*h2タグ*/
+	#contents h2 {
+		margin-bottom: 50px;
+	}
 
-/*list-column（トップページで使っている３列ブロック）
----------------------------------------------------------------------------*/
-/*ボックス内のh4（見出し）タグ*/
-#contents .list-column h4 {
-	margin-bottom: 0px;
-}
+	/*list-column（トップページで使っている３列ブロック）
+	---------------------------------------------------------------------------*/
+	/*ボックス内のh4（見出し）タグ*/
+	#contents .list-column h4 {
+		margin-bottom: 0px;
+	}
 
-/*ヘッダーメニューが固定されなくなるので、再設定。
----------------------------------------------------------------------------*/
-.link {
-	margin-top: -30px;
-	padding-top: 30px;
-}
+	/*ヘッダーメニューが固定されなくなるので、再設定。
+	---------------------------------------------------------------------------*/
+	.link {
+		margin-top: -30px;
+		padding-top: 30px;
+	}
 
-/*その他
----------------------------------------------------------------------------*/
-body.s-n .sub,body.s-n #footermenu {display: none;}
-.big1 {font-size: 20px;}
+	/*その他
+	---------------------------------------------------------------------------*/
+	body.s-n .sub,body.s-n #footermenu {display: none;}
+	.big1 {font-size: 20px;}
 
 }
 
@@ -755,51 +755,51 @@ body.s-n .sub,body.s-n #footermenu {display: none;}
 ------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width:480px){
 
-/*全体の設定
----------------------------------------------------------------------------*/
-body {
-	font-size: 3vw;
-}
+	/*全体の設定
+	---------------------------------------------------------------------------*/
+	body {
+		font-size: 3vw;
+	}
 
-/*コンテンツ
----------------------------------------------------------------------------*/
-/*h2タグ*/
-#contents h2 {
-	margin-bottom: 30px;
-}
-/*h3タグ*/
-#contents h3 {
-	margin-bottom: 20px;
-}
-#contents section + section {
-	margin-top: 30px;
-}
+	/*コンテンツ
+	---------------------------------------------------------------------------*/
+	/*h2タグ*/
+	#contents h2 {
+		margin-bottom: 30px;
+	}
+	/*h3タグ*/
+	#contents h3 {
+		margin-bottom: 20px;
+	}
+	#contents section + section {
+		margin-top: 30px;
+	}
 
-/*list（worksページで使っている横長ブロック）
----------------------------------------------------------------------------*/
-/*ボックス内のボタン（共通）*/
-.btn1 a {
-	padding: 5px 10px;			/*上下、左右へのボタン内の余白*/
-}
+	/*list（worksページで使っている横長ブロック）
+	---------------------------------------------------------------------------*/
+	/*ボックス内のボタン（共通）*/
+	.btn1 a {
+		padding: 5px 10px;			/*上下、左右へのボタン内の余白*/
+	}
 
-/*テーブル（ta1）
----------------------------------------------------------------------------*/
-/*ta1設定*/
-.ta1, .ta1 td, .ta1 th {
-	padding: 6px;	/*ボックス内の余白*/
-}
-/*ta1の左側ボックス*/
-.ta1 th {
-	width: 100px;
-}
+	/*テーブル（ta1）
+	---------------------------------------------------------------------------*/
+	/*ta1設定*/
+	.ta1, .ta1 td, .ta1 th {
+		padding: 6px;	/*ボックス内の余白*/
+	}
+	/*ta1の左側ボックス*/
+	.ta1 th {
+		width: 100px;
+	}
 
-/*その他
----------------------------------------------------------------------------*/
-.ws,.wl {width: 94%;}
-.fl {float: none;}
-.fr {float: none;}
-.big1 {font-size: 16px;}
-.sh {display:block;}
-.pc {display:none;}
+	/*その他
+	---------------------------------------------------------------------------*/
+	.ws,.wl {width: 94%;}
+	.fl {float: none;}
+	.fr {float: none;}
+	.big1 {font-size: 16px;}
+	.sh {display:block;}
+	.pc {display:none;}
 
 }
