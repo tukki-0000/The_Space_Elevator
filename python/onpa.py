@@ -1,8 +1,9 @@
 import RPi.GPIO as GPIO
 import time
 
-TRIG_PIN = 14
-ECHO_PIN = 15
+TRIG_PIN = 23
+ECHO_PIN = 24
+
 
 GPIO.setmode(GPIO.BCM)
 
@@ -33,4 +34,7 @@ while True:
     t = pulseIn(ECHO_PIN)
 
     distance = 34000 * t/2
-    print(distance, "cm")
+    if distance <= 90:
+        print(distance, "cm")
+    else:
+        continue
